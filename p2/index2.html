@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Pedidos - RF02</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main>
+        <section id="contenedor-pedido">
+            <h1>Registro de Pedidos</h1>
+            <p>Personal de ventas: Ingresa los datos del nuevo pedido.</p>
+
+            <form action="#" method="POST">
+
+                <!-- Nombre de cliente -->
+                <div>
+                    <label for="cliente">Nombre del cliente:</label><br>
+                    <input type="text"
+                           id="cliente"
+                           name="cliente"
+                           placeholder="Ej. Juan Pérez"
+                           required>
+                </div>
+
+                <br>
+
+                <!-- Producto -->
+                <div>
+                    <label for="producto">Producto:</label><br>
+                    <select id="producto" name="producto" required>
+                        <option value="" disabled selected>Selecciona un producto...</option>
+                        <option value="producto_1">Producto 1</option>
+                        <option value="producto_2">Producto 2</option>
+                        <option value="producto_3">Producto 3</option>
+                    </select>
+                </div>
+
+                <br>
+
+                <!-- Cantidad del producto -->
+                <div>
+                    <label for="cantidad">Cantidad del producto:</label><br>
+                    <input type="number"
+                           id="cantidad"
+                           name="cantidad"
+                           min="1"
+                           placeholder="Ej. 5"
+                           required>
+                </div>
+
+                <br>
+
+                <!-- Fecha/hora estimada de la entrega -->
+                <div>
+                    <label for="fecha_entrega">Fecha y hora estimada de entrega:</label><br>
+                    <input type="datetime-local"
+                           id="fecha_entrega"
+                           name="fecha_entrega"
+                           required>
+                </div>
+
+                <br>
+
+                <!-- Botón de envío -->
+                <div>
+                    <button type="submit">Registrar Pedido</button>
+                </div>
+
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>
