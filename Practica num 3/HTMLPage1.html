@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Estructura Semántica</title>
+</head>
+<body>
+
+    <header>
+        <h1>Revista Digital de Desarrollo</h1>
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#tutoriales">Tutoriales</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+
+        <section id="tutoriales">
+            <h2>Artículos Destacados</h2>
+
+            <article>
+                <header>
+                    <h3>Cómo usar HTML semántico paso a paso</h3>
+                    <p>Publicado el <time datetime="2026-09-27">27 de septiembre de 2026</time></p>
+                </header>
+
+                <p>Las etiquetas semánticas aportan significado estructural a tu documento web...</p>
+
+                <figure>
+                    <img src="arquitectura-web.jpg" alt="Esquema de bloques de una página HTML5">
+                    <figcaption>Figura 1: Distribución clásica de contenedores semánticos.</figcaption>
+                </figure>
+
+                <footer>
+                    <p>Escrito por <strong>Aaron Dahir Lorenzana Herandez</strong></p>
+                </footer>
+            </article>
+
+            <article>
+                <h3>Buenas prácticas de accesibilidad web</h3>
+                <p>Un buen marcado HTML es la base de cualquier sitio inclusivo...</p>
+            </article>
+        </section>
+
+        <aside aria-label="Información complementaria">
+            <h2>Recursos recomendados</h2>
+            <ul>
+                <li><a href="https://developer.mozilla.org/es/">Documentación MDN Web Docs</a></li>
+                <li><a href="https://www.w3.org/WAI/">Guías de accesibilidad W3C</a></li>
+            </ul>
+        </aside>
+
+    </main>
+
+    <footer>
+        <address>
+            Contacto: <a href="mailto:ghostdahir@gmail.com">ghostdahir@gmail.com</a>
+        </address>
+        <p>&copy; 2026 Revista Digital. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
